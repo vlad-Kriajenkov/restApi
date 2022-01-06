@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.home {
+  display: flex;
+}
+.home__navigation {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding: 10px 20px;
+  height: 100vh;
+  box-shadow: 8px 1px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.home__mainBlock {
+  width: 100%;
+}
+
+.navigation__btnFilm {
+  width: 200px;
+  text-decoration: none;
+  padding: 9px;
+  color: #a675b3;
+  text-align: center;
+  display: block;
+  margin: 10px auto;
+  font: normal 14px arial;
+}
+.navigation__btnFilm:not(.active) {
+  box-shadow: inset 0 1px 1px rgba(111, 55, 125, 0.8), inset 0 -1px 0px rgba(63, 59, 113, 0.2), 0 9px 16px 0 rgba(0, 0, 0, 0.3), 0 4px 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 1px #150a1e;
+  background-image: linear-gradient(#3b2751, #271739);
+  text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 -1px 0 #311d47;
+}
+.navigation__btnFilm:not(.active):hover, .navigation__btnFilm:not(.active):focus {
+  transition: color 200ms linear, text-shadow 500ms linear;
+  color: #fff;
+  text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 0 10px rgba(223, 206, 228, 0.4), 0 0 2px #2a153c;
+}
+.navigation__btnFilm:not(:hover) {
+  transition: 0.6s;
+}
+
+.mainBlock__searchField {
+  margin: 20px 40px 20px 40px;
+}
+.mainBlock__searchField input {
+  width: 40%;
+  height: 40px;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.mainBlock__content {
+  padding: 15px;
+  margin: 0px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.content__box {
+  margin: 10px 20px;
+  padding: 5px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  box-shadow: 0px 5px 10px 2px rgba(68, 29, 7, 0.2);
+}
+
+.box__title {
+  margin-bottom: 10px;
+}
