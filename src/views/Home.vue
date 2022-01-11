@@ -6,6 +6,7 @@
             :key="index"
             @click="click(index)"
             class="navigation__btnFilm"
+            
             >
                 {{nameFilm.title}}
             </button>
@@ -23,174 +24,68 @@
             </div>
 
             <!-- <div
-            class="mainBlock__content ">
-                <div class="content__box">
-                    <div class="box__title">Name Film:</div> 
-                    <div class="box__link">
-                        {{todosByTitle.results[id].title}}
-                    </div>
-                </div>
-                <div class="content__box">
-                    <div class="box__title">Created:</div> 
-                    <div class="box__link">
-                        {{todosByTitle.results[id].created}}
-                    </div>
-                </div>
-                <div class="content__box">
-                    <div class="box__title">Director:</div> 
-                    <div class="box__link">
-                        {{todosByTitle.results[id].director}}
-                    </div>
-                </div>
-                <div class="content__box">
-                    <div class="box__title">Edited:</div> 
-                    <div class="box__link">
-                        {{todosByTitle.results[id].edited}}
-                    </div>
-                </div>
-                 <div class="content__box">
-                    <div class="box__title">Episode:</div> 
-                    <div class="box__link">
-                        {{todosByTitle.results[id].episode_id}}
-                    </div>
-                </div>
-                 <div class="content__box">
-                    <div class="box__title">Release Date:</div> 
-                    <div class="box__link">
-                        {{todosByTitle.results[id].release_date}}
-                    </div>
-                </div>
-                <div class="content__box">
-                    <div class="box__title">Producer:</div> 
-                    <div class="box__link">
-                        {{todosByTitle.results[id].producer}}
-                    </div>
-                </div>
-                <div class="content__box">
-                    <div class="box__title">Url:</div> 
-                    <div class="box__link">
-                        {{todosByTitle.results[id].url}}
-                    </div>
-                </div>
-                <div class="content__box">
-                    <div class="box__title">Opening Crawl:</div> 
-                    <div class="box__link">
-                        {{todosByTitle.results[id].opening_crawl}}
-                    </div>
-                </div>
-                <div class="content__box">
-                    <div class="box__title">Planets:</div> 
-                    <div 
-                    v-for="post in todosByTitle.results[id].planets"
-                    :key="post.id"
-                    class="box__link">
-                    
-                        {{post}}
-                    </div>
-                </div>
-                <div class="content__box">
-                    <div class="box__title">Species:</div> 
-                    <div 
-                    v-for="post in todosByTitle.results[id].species"
-                    :key="post.id"
-                    class="box__link">
-                    
-                        {{post}}
-                    </div>
-                </div>
-                <div class="content__box">
-                    <div class="box__title">Starships:</div> 
-                    <div 
-                    v-for="post in todosByTitle.results[id].starships"
-                    :key="post.id"
-                    class="box__link">
-                    
-                        {{post}}
-                    </div>
-                </div>
-                <div class="content__box">
-                    <div class="box__title">Characters:</div> 
-                    <div 
-                    v-for="post in todosByTitle.results[id].characters"
-                    :key="post.id"
-                    class="box__link">
-                        {{post}}
-                    </div>
-                </div>
-                <div class="content__box">
-                    <div class="box__title">Vehicles:</div> 
-                    <div 
-                    v-for="post in todosByTitle.results[id].vehicles"
-                    :key="post.id"
-                    class="box__link">
-                        {{post}}
-                    </div>
-                     v-for="(post, index) in todosByTitle"
+            v-for="(post,index) in todosByTitle"
             :key="index"
-                </div> 
-            </div> -->
-             <div
-          
             class="mainBlock__content"
             >
                 <div class="content__box">
                     <div class="box__title">Name Film:</div> 
                     <div class="box__link">
-                        {{todosByTitle[id].title}}
+                        {{todosByTitle.title}}
                     </div>
                 </div>
                 <div class="content__box">
                     <div class="box__title">Created:</div> 
                     <div class="box__link">
-                        {{todosByTitle[id].created}}
+                        {{todosByTitle.created}}
                     </div>
                 </div>
                 <div class="content__box">
                     <div class="box__title">Director:</div> 
                     <div class="box__link">
-                        {{todosByTitle[id].director}}
+                        {{todosByTitle.director}}
                     </div>
                 </div>
                 <div class="content__box">
                     <div class="box__title">Edited:</div> 
                     <div class="box__link">
-                        {{todosByTitle[id].edited}}
+                        {{todosByTitle.edited}}
                     </div>
                 </div>
                  <div class="content__box">
                     <div class="box__title">Episode:</div> 
                     <div class="box__link">
-                        {{todosByTitle[id].episode_id}}
+                        {{todosByTitle.episode_id}}
                     </div>
                 </div>
                  <div class="content__box">
                     <div class="box__title">Release Date:</div> 
                     <div class="box__link">
-                        {{todosByTitle[id].release_date}}
+                        {{todosByTitle.release_date}}
                     </div>
                 </div>
                 <div class="content__box">
                     <div class="box__title">Producer:</div> 
                     <div class="box__link">
-                        {{todosByTitle[id].producer}}
+                        {{todosByTitle.producer}}
                     </div>
                 </div>
                 <div class="content__box">
                     <div class="box__title">Url:</div> 
                     <div class="box__link">
-                        {{todosByTitle[id].url}}
+                        {{todosByTitle.url}}
                     </div>
                 </div>
                 <div class="content__box">
                     <div class="box__title">Opening Crawl:</div> 
                     <div class="box__link">
-                        {{todosByTitle[id].opening_crawl}}
+                        {{todosByTitle.opening_crawl}}
                     </div>
                 </div>
                 <div class="content__box">
                     <div class="box__title">Planets:</div> 
                     <div 
-                    v-for="(planets, index) in todosByTitle[id].planets"
+                    v-for="(planets, index) in todosByTitle.planets"
                     :key="index"
                     class="box__link">
                     
@@ -200,7 +95,7 @@
                 <div class="content__box">
                     <div class="box__title">Species:</div> 
                     <div 
-                    v-for="(species, index) in todosByTitle[id].species"
+                    v-for="(species, index) in todosByTitle.species"
                     :key="index"                    
                     class="box__link">
                     
@@ -210,7 +105,7 @@
                 <div class="content__box">
                     <div class="box__title">Starships:</div> 
                     <div 
-                    v-for="(starships, index) in todosByTitle[id].starships"
+                    v-for="(starships, index) in todosByTitle.starships"
                     :key="index"  
                     class="box__link">
                     
@@ -220,7 +115,7 @@
                 <div class="content__box">
                     <div class="box__title">Characters:</div> 
                     <div 
-                    v-for="(characters, index) in todosByTitle[id].characters"
+                    v-for="(characters, index) in todosByTitle.characters"
                     :key="index"  
                     class="box__link">
                         {{characters}}
@@ -229,38 +124,198 @@
                 <div class="content__box">
                     <div class="box__title">Vehicles:</div> 
                     <div 
-                    v-for="(vehicles, index) in todosByTitle[id].vehicles"
+                    v-for="(vehicles, index) in todosByTitle.vehicles"
                     :key="index"  
                     class="box__link">
                         {{vehicles}}
                     </div>
                 </div> 
+            </div> -->
+            <div>
+                <div
+                v-for="(post,index) in todosByTitle"
+                :key="index"
+                class="mainBlock__content"
+                >   
+                    <div class="content__box">
+                        <div class="box__title">Name Film:</div> 
+                        <div class="box__link">
+                            {{post.title  }} {{todosByTitle.title}}
+                        </div>
+                    </div>
+                    <div class="content__box">
+                        <div class="box__title">Created:</div> 
+                        <div class="box__link">
+                            {{post.created}} {{todosByTitle.created}}
+                        </div>
+                    </div>
+                    <div class="content__box">
+                        <div class="box__title">Director:</div> 
+                        <div class="box__link">
+                            {{post.director}} {{todosByTitle.director}}
+                        </div>
+                    </div>
+                    <div class="content__box">
+                        <div class="box__title">Edited:</div> 
+                        <div class="box__link">
+                            {{post.edited}} {{todosByTitle.edited}}
+                        </div>
+                    </div>
+                    <div class="content__box">
+                        <div class="box__title">Episode:</div> 
+                        <div class="box__link">
+                            {{post.episode_id}} {{todosByTitle.episode_id}}
+                        </div>
+                    </div>
+                    <div class="content__box">
+                        <div class="box__title">Release Date:</div> 
+                        <div class="box__link">
+                            {{post.release_date}} {{todosByTitle.release_date}}
+                        </div>
+                    </div>
+                    <div class="content__box">
+                        <div class="box__title">Producer:</div> 
+                        <div class="box__link">
+                            {{post.producer}} {{todosByTitle.producer}}
+                        </div>
+                    </div>
+                    <div class="content__box">
+                        <div class="box__title">Url:</div> 
+                        <div class="box__link">
+                            {{post.url}} {{todosByTitle.url}}
+                        </div>
+                    </div>
+                    <div class="content__box">
+                        <div class="box__title">Opening Crawl:</div> 
+                        <div class="box__link">
+                            {{post.opening_crawl}} {{todosByTitle.opening_crawl}}
+                        </div>
+                    </div>
+                    <div class="content__box">
+                        <div class="box__title">Planets:</div> 
+                        <div 
+                        v-for="(planets, index) in post.planets"
+                        :key="index"
+                        class="box__link">
+                        
+                            {{planets}} 
+                        </div>
+                        <div 
+                        v-for="(planets, index) in todosByTitle.planets"
+                        :key="index"
+                        class="box__link">
+                        
+                            {{planets}} 
+                        </div>
+                    
+                    </div>
+                    <div class="content__box">
+                        <div class="box__title">Species:</div> 
+                        <div 
+                        v-for="(species, index) in post.species"
+                        :key="index"                    
+                        class="box__link">
+                        
+                            {{species}}
+                        </div>
+                        <div 
+                        v-for="(species, index) in todosByTitle.species"
+                        :key="index"                    
+                        class="box__link">
+                        
+                            {{species}}
+                        </div>
+                    </div>
+                    <div class="content__box">
+                        <div class="box__title">Starships:</div> 
+                        <div 
+                        v-for="(starships, index) in post.starships"
+                        :key="index"  
+                        class="box__link">
+                        
+                            {{starships}}
+                        </div>
+                        <div 
+                        v-for="(starships, index) in todosByTitle.starships"
+                        :key="index"  
+                        class="box__link">
+                        
+                            {{starships}}
+                        </div>
+                    </div>
+                    <div class="content__box">
+                        <div class="box__title">Characters:</div> 
+                        <div 
+                        v-for="(characters, index) in post.characters"
+                        :key="index"  
+                        class="box__link">
+                            {{characters}}
+                        </div>
+                        <div 
+                        v-for="(characters, index) in todosByTitle.characters"
+                        :key="index"  
+                        class="box__link">
+                            {{characters}}
+                        </div>
+                    </div>
+                    <div class="content__box">
+                        <div class="box__title">Vehicles:</div> 
+                        <div 
+                        v-for="(vehicles, index) in post.vehicles"
+                        :key="index"  
+                        class="box__link">
+                            {{vehicles}}
+                        </div>
+                        <div 
+                        v-for="(vehicles, index) in todosByTitle.vehicles"
+                        :key="index"  
+                        class="box__link">
+                            {{vehicles}}
+                        </div>
+                    </div> 
+                </div>
             </div>
+            
         </div>
     </div>
 </template>
 
 <script>
-import { mapGetters, mapActions } from "vuex";
-
 export default {
     data(){
         return{
-            id: '0',
+            id: '',
             allFilms: [],
             search: '',
         }
     },
     computed: {
         todosByTitle: function() {
-            return this.allFilms.filter((item) => {
-               return item.title.toLowerCase().indexOf(this.search.toLowerCase()) > -1 ||   item.characters.indexOf(this.search) > -1   || item.species.indexOf(this.search) > -1  || item.vehicles.indexOf(this.search) > -1 
-            })
+           
+            if (this.search.length) {
+                return this.allFilms.filter((item) => {
+                    return item.title.toLowerCase().indexOf(this.search.toLowerCase()) > -1 ||  item.characters.indexOf(this.search) > -1   || item.species.indexOf(this.search) > -1  || item.vehicles.indexOf(this.search) > -1 
+                })
+            } else if(this.allFilms[this.id]) {
+                
+                return this.allFilms[this.id]
+                
+            }
         },
     },
-    // computed: mapGetters(["allPosts"]),
-    mounted() {
-        // this.fetchPost();
+    mounted(){
+        if (localStorage.search) {
+            this.search = localStorage.search
+          
+        }
+    },
+    watch: {
+        search(newSearch) {
+            localStorage.search = newSearch;
+            const film = JSON.stringify(this.todosByTitle)
+            localStorage.setItem('Films', film)
+         
+        },
         
     },
     beforeMount() {
@@ -268,17 +323,15 @@ export default {
         .then(response => response.json())
         .then(json => {
             this.allFilms = json.results;
-            
         })
-        
     },
     methods: {
-        // ...mapActions(["fetchPost"]),
         click(id){
             this.id = id;
-           
-        }
-
+            console.log(this.allFilms[id].episode_id);
+            return this.search = "";
+        },
+        
     }
 }
 </script>
